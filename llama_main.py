@@ -1,18 +1,18 @@
 import os.path
 import sys
-from llama_index.llms.openai import OpenAI
 from llama_index.core import (
-    Settings,
     VectorStoreIndex,
     SimpleDirectoryReader,
     StorageContext,
     load_index_from_storage,
 )
 
-Settings.llm = OpenAI(temperature=0.2, model="gpt-4")
-
-
 def main():
+    """
+    Entry point of the program.
+    Retrieves a question from the command-line arguments, loads or creates an index,
+    and queries the index with the provided question.
+    """
     # Check if a question is provided as a command-line argument
     if len(sys.argv) < 2:
         print("Please provide a question as a command-line argument.")

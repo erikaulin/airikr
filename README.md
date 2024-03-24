@@ -12,13 +12,6 @@ Once Poetry is installed, you can install the project dependencies with:
 poetry install
 ```
 
-## Usage
-After setting up Poetry and installing the dependencies, you can start the project by running the `starter_open-ai.py` script.
-
-```bash
-poetry run python starter_open-ai.py "Question"
-```
-
 ## Contributing
 Contributions are welcome. Please feel free to fork the project and submit your pull requests.
 
