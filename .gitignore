@@ -1,0 +1,5 @@
+*.pdf
+*.bin
+_old/
+storage/
+data/
